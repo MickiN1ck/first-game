@@ -16,7 +16,9 @@ class Game:
         self.width = 1550
         self.height = 810
         self.screen = pg.display.set_mode((self.width, self.height))
-        coin_image = pg.image.load(f"картинки/монетка.png")
+        pg.display.set_caption("пародия на марио")
+        pg.display.set_icon(pg.image.load("картинки/гриб.jpg"))
+        coin_image = pg.image.load("картинки/монетка.png")
         coin_sound = pg.mixer.Sound("звуки/звук монетки.mp3")
         shot_sound = pg.mixer.Sound("звуки/звук выстрела.mp3")
         self.locations = [
